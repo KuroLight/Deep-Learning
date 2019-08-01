@@ -33,8 +33,8 @@ with torch.no_grad():
     outputs = model(tokens_tensor)
     predictions = outputs[0]
 
-print(type(outputs[0]))
-print(type(outputs[1]))
+print(type(outputs[0]), outputs[0].shape)
+print(outputs[1])
 
 
 # get the predicted next sub-word (in our case, the word 'man')
